@@ -1,9 +1,130 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>Welcome to myPage</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>FARGEO WEB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FARGEOのウェブサイト。">
+<meta name="keywords" content="マンガ,アニメ,ゲーム,アニラジ,地理,交通,旅行">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/fixmenu_pagetop.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function(){
+$('a[href^="#"]').click(function() {
+var speed = 800;
+var href= $(this).attr("href");
+var target = $(href == "#" || href == "" ? 'html' : href);
+var position = target.offset().top;
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
 </head>
+
 <body>
-Hello World!
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="https://user-images.githubusercontent.com/75986974/102343676-27ec0180-3fde-11eb-9cc1-95fbd5474ae4.png" alt="FARGEO WEB"></a></h1>
+<nav id="menubar">
+<ul>
+<li><a href="#content">コンテンツ</a></li>
+<li><a href="#profile">自己紹介</a></li>
+<li><a href="#new">更新情報</a></li>
+<li><a href="#twitter">Twitter</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="container">
+
+<div id="contents">
+
+<section id="content">
+
+<h2>コンテンツ</h2>
+
+<div class="list">
+<img src="https://user-images.githubusercontent.com/75986974/102344256-fa538800-3fde-11eb-80fe-00f69284ea99.jpg" alt="">
+<h4><a href="http://far-geo.mywebcommunity.org/tegalog.cgi">備忘録</a></h4>
+<p>更新頻度が非常に高いミニブログ。</p>
+</div>
+<div class="list">
+<img src="https://user-images.githubusercontent.com/75986974/102344367-253ddc00-3fdf-11eb-9d4d-89808e863988.jpg" alt="">
+<h4>データ保管庫（準備中）</h4>
+<p>様々な情報をまとめたデータの保管庫。</p>
+</div>
+
+</section>
+
+<section id="profile">
+
+<h2>自己紹介</h2>
+
+<table class="ta1">
+<tr>
+<th>名前</th>
+<td>ふぁるじお</td>
+</tr>
+<tr>
+<th>誕生日</th>
+<td>3月22日</td>
+</tr>
+<tr>
+<th>出身地</th>
+<td>福島県福島市</td>
+</tr>
+<tr>
+<th>好きなもの</th>
+<td>マンガ，アニメ，ゲーム，アニラジ，地理，交通，旅行・・・</td>
+</tr>
+</table>
+
+</section>
+
+<section id="new">
+
+<h2>更新情報</h2>
+
+<dl>
+<dt>2020/12/15</dt>
+<dd>サイトリニューアル。</dd>
+<dt>2020/05/27</dt>
+<dd><b>備忘録</b>を設置。</dd>
+<dt>2017/04/27</dt>
+<dd>サイト開設。<b>自己紹介</b>を設置。</dd>
+</dl>
+
+</section>
+
+<section id="twitter">
+
+<h2>Twitter</h2>
+<center>
+<p><img src="https://user-images.githubusercontent.com/75986974/102342645-e3ac3180-3fdc-11eb-8a10-f11aa6c0a737.png"></p>
+<p>情報収集用。連絡はこちらまで。</p>
+<p><a href="https://twitter.com/Fargeo_f?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="ja" data-show-count="false">Follow @Fargeo_f</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p><a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/Fargeo_f?ref_src=twsrc%5Etfw">Tweets by Fargeo_f</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+</center> 
+
+</section>
+</div>
+</div>
+
+<footer>
+<small>Copyright&copy; <a href="index.html">FARGEO</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
 </body>
 </html>
